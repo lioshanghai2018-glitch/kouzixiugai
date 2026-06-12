@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm i *)",
+      "Bash(npm run *)",
+      "Bash(node node_modules/vite/bin/vite.js)",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/ -H 'Content-Type: application/json' -d '{\"method\":\"getCategories\",\"params\":{}}')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/getCategories -H 'Content-Type: application/json' -d '{}')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/addCategory -H 'Content-Type: application/json' -d '{\"name\":\"test\",\"sort\":1,\"status\":true}')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/updateCategory -H 'Content-Type: application/json' -d '{\"id\":\"6a14283d149854510ce41a81\",\"name\":\"test-updated\",\"sort\":10,\"status\":false}')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/deleteCategory -H 'Content-Type: application/json' -d '{\"id\":\"6a14283d149854510ce41a81\"}')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/deleteCategory -H 'Content-Type: application/json' -d '{\"docId\":\"6a14283d149854510ce41a81\"}')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/deleteCategory -H 'Content-Type: application/json' -d '\"6a14283d149854510ce41a81\"')",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/deleteCategory -H 'Content-Type: application/json' --data-raw 6a14283d149854510ce41a81)",
+      "Bash(curl -s -X POST https://fc-mp-ae9bd108-da40-4ae6-923b-c3007dedec12.next.bspapp.com/merchant-api/deleteCategory -H 'Content-Type: text/plain' --data-raw 6a14283d149854510ce41a81)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl *)",
+      "mcp__MiniMax__understand_image"
+    ]
+  }
+}

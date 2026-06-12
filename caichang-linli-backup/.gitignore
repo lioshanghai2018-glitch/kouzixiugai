@@ -1,0 +1,14 @@
+# 兜底：每个子目录有自己的 .gitignore，这里防止遗漏
+node_modules/
+unpackage/
+dist/
+.hbuilderx/
+.claude/
+.DS_Store
+*.log
+.env
+.env.local
+project.private.config.json
+
+# 兜底：uapp-app 端 uniCloud 云函数已废弃，不进备份
+user-app/uniCloud-aliyun/cloudfunctions/

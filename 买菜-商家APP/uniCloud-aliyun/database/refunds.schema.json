@@ -1,0 +1,21 @@
+{
+  "bsonType": "object",
+  "required": ["_id"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "orderId": { "bsonType": "string" },
+    "orderNo": { "bsonType": "string" },
+    "merchantId": { "bsonType": "string" },
+    "userId": { "bsonType": "string" },
+    "reason": { "bsonType": "string" },
+    "type": { "bsonType": "string", "description": "return_refund / refund_only / exchange" },
+    "images": { "bsonType": "array", "description": "图片凭证" },
+    "userId": { "bsonType": "string" },
+    "rejectReason": { "bsonType": "string", "description": "商家拒绝原因" },
+    "refundAmount": { "bsonType": "double", "defaultValue": 0 },
+    "status": { "bsonType": "string", "defaultValue": "pending", "description": "pending / approved / rejected" },
+    "processedBy": { "bsonType": "string", "defaultValue": "" },
+    "processedAt": { "bsonType": "datetime" },
+    "createdAt": { "bsonType": "datetime", "forceDefaultValue": { "$env": "now" } }
+  }
+}
